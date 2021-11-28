@@ -36,11 +36,11 @@
   </head>
 
   <body>
-    <script>
+    <!-- <script>
       alert(
         'Clique no HueHueHue se quiser atualizar a página e ver novas imagens.'
       )
-    </script>
+    </script> -->
 
     <div class="background1">
       <!--NavBar-->
@@ -191,8 +191,8 @@
         <div class="row background2" id="jumbotron">
           <div class="col-md-12">
             <div class="jumbotron jumbotron-fluid">
-              <h1 class="display-4">Nada acontece feijoada</h1>
-              <p class="lead">
+              <h1 class="display-4 text-light">Nada acontece feijoada</h1>
+              <p class="lead text-light">
                 Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et
                 quo num tendi nada. Aenean aliquam molestie leo, vitae iaculis
                 nisl. Praesent malesuada urna nisi, quis volutpat erat hendrerit
@@ -216,7 +216,7 @@
                 sociosqu ad litora torquent.
               </p>
               <hr class="my-4" />
-              <p>
+              <p class="text-light">
                 Casamentiss faiz malandris se pirulitá. Detraxit consequat et
                 quo num tendi nada. Quem num gosta di mim que vai caçá sua
                 turmis! Copo furadis é disculpa de bebadis, arcu quam euismod
@@ -520,7 +520,7 @@
         <!--/Texto e video-->
 
         <!--Formulário de contato-->
-        <div class="row mb-3" id="contato">
+        <div class="row mb-1" id="contato">
           <div class="col-md-12">
             <h2 class="text-center text-light">Entre em contato com agente</h2>
           </div>
@@ -528,25 +528,42 @@
 
         <div class="row mb-3 d-flex align-items-center">
           <div class="col-md-6">
-            <form>
+            <form class="was-validated">
               <div class="form-group">
-                <label for="exampleFormControlInput1">Endereço de email</label>
+                <label for="exampleFormControlInput1" class="text-light"
+                  >Nome</label
+                >
                 <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="nome@exemplo.com"
+                  type="text"
+                  class="form-control is-valid"
+                  id="validationServer01"
+                  placeholder="Nome"
+                  value=""
+                  required
                 />
               </div>
 
               <div class="form-group">
-                <label for="exampleFormControlTextarea1"
-                  >Exemplo de textarea</label
+                <label for="validationEmailarea" class="text-light"
+                  >E-mail</label
                 >
-                <textarea
+                <input
+                  id="inputEmail"
                   class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
+                  placeholder="exemplo@email.com"
+                  type="email"
+                  data-error="Por favor, informe um e-mail correto."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="validationTextarea" class="text-light">Texto</label>
+                <textarea
+                  class="form-control is-invalid"
+                  id="validationTextarea"
+                  placeholder="Digite o texto aqui"
+                  required
                 ></textarea>
               </div>
               <div class="form-group d-flex justify-content-end">
@@ -573,7 +590,6 @@
 
         <!--Rodape-->
         <div class="row bg-light">
-          <hr />
           <footer>
             <div class="row mb-3" id="rodape">
               <div class="col-md-12 d-flex justify-content-center">
