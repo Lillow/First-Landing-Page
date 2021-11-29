@@ -30,6 +30,13 @@
         width: 50px;
         height: 50px;
       }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .txtcolor {
+        text-emphasis-color: orange;
+      }
     </style>
 
     <title>First Landing Page</title>
@@ -762,21 +769,19 @@
 
         <!--Cards-->
         <div class="row row-cols-1 row-cols-md-2 g-4" id="cards">
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="https://i.redd.it/wws6jjswpq2z.jpg"
+                src="./assets/img/card-1.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
-                </h5>
+                <h5 class="card-title">SO KOREANO E ODEIO BARZIL</h5>
                 <p class="card-text">
-                  Aenean aliquam molestie leo, vitae iaculis nisl. Não sou faixa
-                  preta cumpadi, sou preto inteiris, inteiris. Quem num gosta di
-                  mé, boa gentis num é. Per aumento de cachacis, eu reclamis.
+                  VOCES BRAZILEIRO É PORCO VOCE GOSTA DE FEIJOADA VOCE GOSTA DE
+                  CAIPIRINHA LULA DILMA ASASINO BRAIZIL PORCOS CRIME OCORE NADA
+                  ACONTECE FEIDAJOA
                 </p>
                 <p class="card-text">
                   <small class="text-muted">Last updated 3 mins ago</small>
@@ -785,230 +790,202 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="https://external-preview.redd.it/ZlIGKMkgSYULYiUGH_Dt6yXPw2N3DmR4qJc_txkPRJI.jpg?auto=webp&s=7d913ad355162fd4b491268ad5cf3ab631aba314"
+                src="./assets/img/card-2.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
-                </h5>
+                <h5 class="card-title">SO FRANCES E ODEIO BARZIL</h5>
                 <p class="card-text">
-                  Mé faiz elementum girarzis, nisi eros vermeio. Viva Forevis
-                  aptent taciti sociosqu ad litora torquent. Praesent vel
-                  viverra nisi. Mauris aliquet nunc non turpis scelerisque,
-                  eget. Atirei o pau no gatis, per gatis num morreus.
+                  VOCES BRAZILEIRO É PORCO DESLIGA FREEZER A NOTCH VOCE GOSTA
+                  ECONOMIZA ENERGIA VOCE GOSTA CONTA NO AZUL VERGONHA DA
+                  PROFISSON CRIME OCORE NADA CACONTECE FEIJOADA
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="https://pbs.twimg.com/media/EEHF5UJUYAYciKk.jpg"
+                src="./assets/img/card-3.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
-                </h5>
+                <h5 class="card-title">SO MBL E ODEIO BORSONARO</h5>
                 <p class="card-text">
-                  Quem num gosta di mé, boa gentis num é. Leite de capivaris,
-                  leite de mula manquis sem cabeça. Suco de cevadiss deixa as
-                  pessoas mais interessantis. Mais vale um bebadis conhecidiss,
-                  que um alcoolatra anonimis.
+                  VOCÊS VAPUEIVE É PORCO VOCE GOSTA DE MEMES VOCE GOSTA DE ZUA
+                  BOLSONADO FACISTA CARLOS OLAVO PORCOS MEME OCORRE NADA
+                  ACONTECE FEIJOADA
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="data:image/jpeg;base64,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"
+                src="./assets/img/card-4.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
                 <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
+                  SO SUSPEITO OTARIO E ODEIO BICHÃO MESMO
                 </h5>
                 <p class="card-text">
-                  Quem manda na minha terra sou euzis! Si num tem leite então
-                  bota uma pinga aí cumpadi! Per aumento de cachacis, eu
-                  reclamis. Suco de cevadiss deixa as pessoas mais
-                  interessantis.
+                  VOCES BICHÃO FILMA E FALA FALA AO MESMO TEMPO VOCE GOSTA DE
+                  FILMA VOCE GOSTA DE FALA CAPETA PREGO ASASINO OS KRA TA MI
+                  TIRANO NADA ACONTESE FILMA
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5R1WhaPzL9oxl1Sj_P3AAFG0Fcq7oYRGKo5ACxvax7BZ4fJvqx8bTUAqsJFxISt_duYc&usqp=CAU"
+                src="./assets/img/card-5.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
-                </h5>
+                <h5 class="card-title">SO AMGOLANO E ODEIO BARZIL</h5>
                 <p class="card-text">
-                  Atirei o pau no gatis, per gatis num morreus. Cevadis im
-                  ampola pa arma uma pindureta. Per aumento de cachacis, eu
-                  reclamis. Admodum accumsan disputationi eu sit. Vide electram
-                  sadipscing et per.
+                  VOCEX BRAZILEIRO É PUCTO VOCE GOSTA DE PIÇA VOCE GOSTA DE
+                  PARTILHAR MIMHAS CENAS BRANCO GAY ASASINO BRAIZIL PUCTOS SUA
+                  MAÊ OCORE SIDA ACONTECE PIÇA
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx7b8vGwYtXc4alDB6DAXyLmLkIVVIUW3yLoIcaqDJOMC4gHKaZLXcWxZ6Vf1TxFkzBiI&usqp=CAU"
+                src="./assets/img/card-6.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
-                </h5>
+                <h5 class="card-title">SO PSICOLOGA E ODEIO SODOMISTA</h5>
                 <p class="card-text">
-                  Mauris nec dolor in eros commodo tempor. Aenean aliquam
-                  molestie leo, vitae iaculis nisl. Posuere libero varius.
-                  Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.
-                  Per aumento de cachacis, eu reclamis. Casamentiss faiz
-                  malandris se pirulitá.
+                  VOCES SODOMISTA É PORCO VOCE GOSTA DE DAR O RABO VOCE GOSTA DE
+                  FRICSÃO ANAL SODOMISTA PORCO CHICO BIOCA ASASINO BACTERIA
+                  OCORE NADA ACONTECE FRICSÃO
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="https://images-cdn.9gag.com/photo/aqgE5Vv_700b.jpg"
+                src="./assets/img/card-7.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
-                </h5>
+                <h5 class="card-title">SO BR E ODEIO OS CHINES</h5>
                 <p class="card-text">
-                  Viva Forevis aptent taciti sociosqu ad litora torquent.
-                  Detraxit consequat et quo num tendi nada. Manduma pindureta
-                  quium dia nois paga. Interagi no mé, cursus quis, vehicula ac
-                  nisi.
+                  OCEIS VAO SE FODEREM VCS GOSTA DE PING PONG VOCE GOSTA DE
+                  PASTEL DE FLANGO DITADURA FILHA TA PUTA ESCONDE CORONGA NADA
+                  ACONTECE SOPA DE MORCEGO
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq5w8vSCLrJN2CKdTKgeDnbx7uV8E1tB9jUbZ3WqjJJv1G326vZ7znfTlTHr4CTbo6Dog&usqp=CAU"
+                src="./assets/img/card-8.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
-                </h5>
+                <h5 class="card-title">SO EMPREZARIO E ODEIO BARZIL</h5>
                 <p class="card-text">
-                  Viva Forevis aptent taciti sociosqu ad litora torquent.
-                  Posuere libero varius. Nullam a nisl ut ante blandit
-                  hendrerit. Aenean sit amet nisi. Quem manda na minha terra sou
-                  euzis! Atirei o pau no gatis, per gatis num morreus.
+                  VOCES BRAZILEIRO É IRRITANTE VOCE GOSTA DE HUMOR NEGRO VOCE
+                  GOSTA DE FLOOD FAKE MEMEIRO ASASINO BRAIZIL IRRITANTES PIADA
+                  OCORE BLOCK ACONTECE HUMOR NEGRO
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNI6JI_5sfDFw2h1qpiSIcKhIicr3e8ebDRGr40KcwBKgoi5myKdGzTOobWhBIRMCoXtQ&usqp=CAU"
+                src="./assets/img/card-9.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
-                </h5>
+                <h5 class="card-title">SO BARZILERO E ODEIO KOREA</h5>
                 <p class="card-text">
-                  Interagi no mé, cursus quis, vehicula ac nisi. Sapien in monti
-                  palavris qui num significa nadis i pareci latim. Aenean
-                  aliquam molestie leo, vitae iaculis nisl. Suco de cevadiss, é
-                  um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+                  VOCES KOERANO É VICIADO VOCE GOSTA DE DISPUTA FINAL VOCE GOSTA
+                  DE ELIMINA BARZIL FAKER KURO ASASINO KROEA VICADOS MUNDIAL
+                  OCORE NADA ACONTECE FINAIS
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq_QeC7XM5UX9WA78j1aBMGO-qi0yL-HQlrZhroSQJuMCZ1kBzwmp3N_68ZaBINELb9Ko&usqp=CAU"
+                src="./assets/img/card-10.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
-                </h5>
+                <h5 class="card-title">SO DESKOLADO E ODEIO NORMI</h5>
                 <p class="card-text">
-                  Manduma pindureta quium dia nois paga. Paisis, filhis,
-                  espiritis santis. Detraxit consequat et quo num tendi nada.
-                  Nec orci ornare consequat. Praesent lacinia ultrices
-                  consectetur. Sed non ipsum felis.
+                  VOCES NOMRIE É TOP VOCE GOSTA DE VIDA VOCE GOSTA DE TRANSA
+                  INES EMOJI ASASINO NOMIER TOPS MEME ESTRAGA NADA ACONTECE VIDA
+                  SOCIAL
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="https://catracalivre.com.br/wp-content/uploads/2015/04/ed_motta_meme-1.png"
+                src="./assets/img/card-11.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
-                </h5>
+                <h5 class="card-title">SOU JAZZEIRO E ODEIO BARZIL</h5>
                 <p class="card-text">
-                  A ordem dos tratores não altera o pão duris. Atirei o pau no
-                  gatis, per gatis num morreus. Detraxit consequat et quo num
-                  tendi nada. Delegadis gente finis, bibendum egestas augue arcu
-                  ut est.Mé faiz elementum girarzis, nisi eros vermeio. Cevadis
-                  im ampola pa arma uma pindureta.
+                  VOCES BRAZILEIRO É PEDREIRO VOCE GOSTA DE CERVEJA BARATA VOCE
+                  GOSTA DE GRITAR EM SHOW POLITICAMENTE CORRETO CALHORDA BRAIZL
+                  GRITOES JAZZ OCORE NADA ACONTECE MANUEL
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-md-4">
             <div class="card">
               <img
-                src="https://imageproxy.ifunny.co/crop:x-20,resize:640x,quality:90x75/images/5b3a7b40b513334dc2f7feb7ba089090eb0d7b6f42a2af39c7f52f44e828a32c_1.jpg"
+                src="./assets/img/card-12.jpg"
                 class="card-img-top"
                 alt="Imagem de meme br"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Mussum Ipsum, cacilds vidis litro abertis
-                </h5>
-                <p class="card-text"></p>
+                <h5 class="card-title">SO INDIANO E ODEIO BARZIL</h5>
+                <p class="card-text">
+                  VOCES BRAZILEIRO É PORCO VOCE GOSTA DE FEIJOADA VOCE GOSTA DE
+                  CAIPIRINHA LULA DILMA ASASINO BRAIZIL PORCOS CRIME OCORE NADA
+                  ACONTECE FEIDAJOA
+                </p>
               </div>
             </div>
           </div>
